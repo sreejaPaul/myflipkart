@@ -1,0 +1,77 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #047bd5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .toplogo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+  }
+  
+  .search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+  
+  .headerInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+  }
+  
+  .topsearch {
+    padding: 5px;
+    height: 22px !important;
+  }
+  
+  
+  .headerNavbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbarOption {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+
+  .firstnav {
+    font-size: 10px;
+  }
+  
+  .secondnav {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .topBusketOption {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .topBusketCount {
+    height: 8px;
+    width: 8px;
+    padding:0px 5px 10px 5px;
+    border-radius: 50%;
+    color:black;
+    font-weight: bold;
+    margin: -12px 10px 0px -5px;
+    background-color: white;
+  }
+
+  

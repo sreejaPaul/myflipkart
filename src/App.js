@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Homebody from "./Homebody";
+import Topbar from "./Topbar";
+import { Route, Routes } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
+import Checkout from "./Checkout";
+
 
 function App() {
+  const [{ }, dispatch] = useStateValue();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Hrader - top bar
+      Home - body */}
+      {/* <Routes>
+
+        <Route path="/" exact>
+          <>
+            <Topbar />
+            <Homebody />
+          </>
+        </Route>
+
+        <Route path="/checkout" exact>
+          <>
+            <Topbar />
+            <Checkout />
+          </>
+        </Route>
+      </Routes> */}
+      <Routes>
+        <Route exact path="/" 
+        element={<>
+            <Topbar />
+            <Homebody />
+          </>} />
+        <Route path="/checkout" 
+        element={<>
+            <Topbar />
+            <Checkout />
+          </>} />
+        
+      </Routes>
+
     </div>
   );
 }
